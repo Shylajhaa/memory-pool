@@ -1,6 +1,12 @@
+import enum
+
+class ResponseType(enum):
+    LIKE = 1
+    COMMENT = 2
+
 class ImageResponse:
-    def __init__(self, image_id, user_id, response_type, value) -> None:
+    def __init__(self, image_id, user_id, response_type, value = None) -> None:
         self.image_id = image_id
         self.user_id = user_id
-        self.response_type = response_type
+        self.response_type = ResponseType(response_type)
         self.value = value

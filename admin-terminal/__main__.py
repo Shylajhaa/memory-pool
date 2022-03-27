@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print("5. Send a connection request")
     print("6. Accept a connection request")
     print("7. View profile")
-    print("8. View User Dahsboard")
+    print("8. View User Dashboard")
     print("---------------------------------")
 
     user_choice = input()

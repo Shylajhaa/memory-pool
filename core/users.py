@@ -1,5 +1,7 @@
 from model.user import User
+from utils.db import DbUtil
 
 class UserManager:
     def createUser(user: User):
-        print(user)
+        query = "INSERT INTO users VALUES(" + user.getId() + " , '" + user.name + "' , '" + user.email + "' , '" + user.password + "')"
+        DbUtil().execute(query)
