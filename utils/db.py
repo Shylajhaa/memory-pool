@@ -10,8 +10,7 @@ class DbUtil:
             database="memory_pool"
         )
     
-    def execute(self, query):
-        print(query)
+    def insert(self, query):
         cursor = self.mydb.cursor()
         cursor.execute(query)
         
